@@ -8,14 +8,14 @@
 
 # GUIA RED TEAM PARA ESTUDANTES
 
-### Fundamentos · Segurança Ofensiva · OPSEC · Laboratório · Relatórios
+### Do Iniciante Absoluto ao Red Team Avançado
 
-Um caminho aberto e responsável para começar em Red Team e segurança ofensiva autorizada.
+Um caminho aberto e responsável para evoluir dos fundamentos ao Red Team avançado.
 
 [![Licença](https://img.shields.io/badge/licença-CC%20BY%204.0-111111?style=flat-square)](LICENSE)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-111111?style=flat-square)](CONTRIBUTING.md)
 
-[Comece aqui](#comece-aqui) · [Fundamentos](#fundamentos) · [Laboratório](#laboratório-seguro) · [Trilhas](#escolha-uma-trilha) · [Portfólio](PROJETOS.md) · [Plano de 16 semanas](TRILHA-16-SEMANAS.md)
+[Comece aqui](#comece-aqui) · [Níveis](#progressão-por-níveis) · [Laboratório](#laboratório-seguro) · [Formação](#formação-red-team) · [Portfólio](PROJETOS.md) · [Trilha completa](TRILHA-COMPLETA.md)
 
 </div>
 
@@ -41,6 +41,18 @@ Se você está completamente no início, siga esta ordem:
 6. Publique projetos próprios, sem dados sensíveis ou material de terceiros.
 
 Não comece comprando certificações ou executando ferramentas contra endereços aleatórios. Primeiro construa uma base que permita entender o resultado das ferramentas.
+
+## Progressão por níveis
+
+| Nível | Foco | Resultado esperado |
+|---|---|---|
+| **0 — Iniciante absoluto** | Informática, arquivos, navegador e segurança digital | Usar o computador com autonomia e segurança |
+| **1 — Fundamentos** | Linux, Windows, redes, web, Python e Git | Compreender o ambiente antes de usar ferramentas |
+| **2 — Operador júnior** | Metodologia, reconhecimento, web e relatórios | Executar avaliações guiadas em laboratório |
+| **3 — Intermediário** | Active Directory, identidade, pivotamento, cloud e automação | Conduzir exercícios controlados com múltiplas etapas |
+| **4 — Avançado** | Adversary emulation, OPSEC, pesquisa e desenvolvimento de tooling | Planejar operações reproduzíveis e liderar exercícios |
+
+Consulte a [Trilha completa do iniciante ao avançado](TRILHA-COMPLETA.md) para ver competências, projetos e critérios de avanço.
 
 ### Etapa Zero
 
@@ -166,7 +178,8 @@ Certificações podem ajudar a organizar estudos ou atravessar filtros de recrut
 
 ## Próximos passos
 
-- Siga a [Trilha Red Team de 16 semanas](TRILHA-16-SEMANAS.md).
+- Comece pela [Trilha Red Team de 16 semanas](TRILHA-16-SEMANAS.md).
+- Continue na [Trilha completa do iniciante ao avançado](TRILHA-COMPLETA.md).
 - Use o [Modelo de diário de estudos](DIARIO-DE-ESTUDOS.md).
 - Escolha um dos [Projetos para portfólio](PROJETOS.md).
 - Registre seu progresso semanalmente.
