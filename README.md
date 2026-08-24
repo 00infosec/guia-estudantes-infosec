@@ -6,11 +6,11 @@
   <img src="assets/logo-light.png" alt="00infosec" width="200">
 </picture>
 
-# GUIA PARA ESTUDANTES DE INFOSEC
+# GUIA RED TEAM PARA ESTUDANTES
 
-### Fundamentos · Laboratório · Prática · Portfólio · Carreira
+### Fundamentos · Segurança Ofensiva · OPSEC · Laboratório · Relatórios
 
-Um caminho aberto e responsável para começar em segurança da informação.
+Um caminho aberto e responsável para começar em Red Team e segurança ofensiva autorizada.
 
 [![Licença](https://img.shields.io/badge/licença-CC%20BY%204.0-111111?style=flat-square)](LICENSE)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-111111?style=flat-square)](CONTRIBUTING.md)
@@ -25,7 +25,7 @@ Um caminho aberto e responsável para começar em segurança da informação.
 
 Segurança da informação não começa com ferramentas. Começa com fundamentos, curiosidade, documentação e responsabilidade.
 
-Este guia é para quem está iniciando e quer aprender com prática realista, sem depender de uma coleção infinita de cursos. Você não precisa dominar tudo de uma vez. Aprenda um conceito, pratique em ambiente controlado, registre o que entendeu e avance.
+Este guia é para quem está iniciando e quer construir uma base real para Red Team, pentest e simulação de adversários. Você não precisa dominar tudo de uma vez. Aprenda um conceito, pratique em ambiente controlado, registre evidências, explique impacto e avance.
 
 > Teste somente sistemas próprios, laboratórios preparados para estudo ou ambientes para os quais você possui autorização explícita.
 
@@ -35,7 +35,7 @@ Se você está completamente no início, siga esta ordem:
 
 1. Aprenda redes, Linux, Windows e fundamentos da web.
 2. Monte um laboratório isolado.
-3. Escolha uma trilha inicial.
+3. Aprenda a metodologia de uma avaliação ofensiva.
 4. Pratique em plataformas autorizadas.
 5. Escreva relatórios sobre o que aprendeu.
 6. Publique projetos próprios, sem dados sensíveis ou material de terceiros.
@@ -72,27 +72,27 @@ Uma configuração inicial simples:
 
 Mantenha o laboratório separado da rede de produção. Nunca reutilize senhas reais e não exponha aplicações vulneráveis diretamente à internet.
 
-## Escolha uma trilha
+## Formação Red Team
 
-### Segurança ofensiva
+### Metodologia ofensiva
 
-Estude redes, HTTP, enumeração, vulnerabilidades web, metodologia de testes e elaboração de relatórios. O objetivo não é “rodar ferramentas”, mas compreender hipóteses, evidências, impacto e mitigação.
+Estude definição de escopo, regras de engajamento, reconhecimento, enumeração, validação, exploração controlada, pós-exploração em laboratório, limpeza e elaboração de relatórios. O objetivo não é “rodar ferramentas”, mas construir hipóteses, reunir evidências e explicar impacto.
 
-### Blue Team e detecção
+### Infraestrutura e identidade
 
-Estude logs, telemetria, Windows Event Logs, Sysmon, redes, SIEM, resposta a incidentes e criação de regras. Pratique explicando quais sinais uma atividade gera e como investigá-los.
+Aprenda Linux, Windows, Active Directory, autenticação, Kerberos, SMB, LDAP, serviços, permissões e segmentação. Um operador ofensivo precisa entender como ambientes corporativos funcionam antes de avaliá-los.
 
-### Application Security
+### Web e APIs
 
-Estude desenvolvimento seguro, autenticação, autorização, modelagem de ameaças, revisão de código, dependências e segurança de APIs. Aprender a programar é parte central desta trilha.
+Estude HTTP, sessões, autenticação, autorização, lógica de negócio, APIs, validação de entrada e revisão de código. Pratique apenas em aplicações deliberadamente vulneráveis ou ambientes autorizados.
 
-### Cloud Security
+### OPSEC e simulação de adversários
 
-Construa primeiro uma base de redes, Linux, identidade e controle de acesso. Depois avance para IAM, armazenamento, logs, segredos, containers, infraestrutura como código e postura de segurança.
+Aprenda planejamento, redução de exposição desnecessária, controle de artefatos, comunicação durante o exercício, critérios de parada e preservação de evidências. OPSEC não elimina a necessidade de autorização e rastreabilidade.
 
-### Pesquisa de vulnerabilidades
+### Detecção como competência de apoio
 
-Estude sistemas operacionais, C/C++, debugging, assembly, formatos de arquivo e técnicas de fuzzing. Esta é uma trilha de longo prazo; fundamentos fortes importam mais que velocidade.
+Estude logs, telemetria, Windows Event Logs, Sysmon e tráfego de rede para compreender quais sinais suas ações produzem. Um bom exercício termina com recomendações que ajudem a defesa a detectar e responder.
 
 ## Plataformas e fontes oficiais
 
@@ -105,7 +105,7 @@ Estude sistemas operacionais, C/C++, debugging, assembly, formatos de arquivo e 
 | [Curso em Vídeo](https://www.cursoemvideo.com/trilhas/) | Base de informática, infraestrutura, algoritmos, Python, Git e Linux em português |
 | [TryHackMe — Pre Security](https://tryhackme.com/beginner-path) | Laboratórios guiados depois dos fundamentos de TI |
 | [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) | Metodologia de testes e referência técnica |
-| [MITRE ATT&CK](https://attack.mitre.org/) | Técnicas e comportamento de adversários |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Planejamento e compreensão de técnicas adversárias |
 | [MITRE D3FEND](https://d3fend.mitre.org/) | Contramedidas e vocabulário defensivo |
 | [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Vulnerabilidades conhecidas por exploração real |
 
@@ -131,7 +131,7 @@ Para cada exercício, responda:
 
 ## Portfólio
 
-Um bom portfólio mostra raciocínio, não apenas capturas de tela. Inclua:
+Um bom portfólio de Red Team mostra metodologia e raciocínio, não apenas capturas de tela. Inclua:
 
 - objetivo e escopo;
 - arquitetura do laboratório;
@@ -156,7 +156,7 @@ Certificações podem ajudar a organizar estudos ou atravessar filtros de recrut
 
 ## O que evitar
 
-- atacar sistemas sem autorização;
+- atacar, enumerar ou testar sistemas sem autorização;
 - copiar write-ups sem compreender;
 - publicar credenciais, tokens ou dados pessoais;
 - executar scripts desconhecidos fora de uma VM;
@@ -166,7 +166,7 @@ Certificações podem ajudar a organizar estudos ou atravessar filtros de recrut
 
 ## Próximos passos
 
-- Siga a [Trilha prática de 16 semanas](TRILHA-16-SEMANAS.md).
+- Siga a [Trilha Red Team de 16 semanas](TRILHA-16-SEMANAS.md).
 - Use o [Modelo de diário de estudos](DIARIO-DE-ESTUDOS.md).
 - Escolha um dos [Projetos para portfólio](PROJETOS.md).
 - Registre seu progresso semanalmente.

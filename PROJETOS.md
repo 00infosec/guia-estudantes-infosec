@@ -1,52 +1,66 @@
-# Projetos para portfólio
+# Projetos Red Team para portfólio
 
-Todos os projetos devem usar dados próprios, fictícios ou ambientes explicitamente preparados para estudo.
+Todos os projetos devem usar sistemas próprios, dados fictícios ou ambientes explicitamente preparados para estudo. Um projeto ofensivo responsável inclui escopo, limites, evidências, impacto, detecção e mitigação.
 
-## Analisador de logs
+## Mapeamento de superfície de ataque
 
-Crie uma ferramenta que leia logs de autenticação ou servidor web, normalize eventos e produza estatísticas e alertas simples.
+Use um domínio controlado por você para levantar DNS, certificados, serviços e tecnologias. Diferencie observações, hipóteses e vulnerabilidades confirmadas.
 
-Demonstre parsing, tratamento de erros, testes, exemplos de entrada e limites das detecções.
+Entrega: inventário de ativos, diagrama, limitações, falsos positivos e recomendações.
 
-## Verificador de configuração TLS
+## Avaliação web autorizada
 
-Avalie certificados e configurações de serviços mantidos por você. Registre expiração, protocolo, hostname e recomendações defensivas.
+Use OWASP Juice Shop ou a Web Security Academy para praticar metodologia, validação e documentação.
 
-Não transforme o projeto em varredura indiscriminada de terceiros.
+Entrega: relatório com resumo executivo, escopo, evidência, impacto, reprodução, telemetria defensiva e correção.
 
-## Inventário de ativos do laboratório
+## Laboratório de identidade
 
-Modele máquinas, endereços, serviços, responsáveis e criticidade do seu ambiente de estudos. Gere JSON e um relatório legível.
+Monte um ambiente local pequeno com Windows, usuários, grupos e permissões. Modele relações de confiança e identifique configurações excessivas sem usar dados reais.
 
-## Validador de cabeçalhos HTTP
+Entrega: diagrama de identidade, caminhos de risco, logs relevantes e plano de hardening.
 
-Analise uma aplicação local e explique a função de cada cabeçalho relevante. Evite tratar ausência de um cabeçalho como vulnerabilidade automática; considere contexto e impacto.
+## Simulação ATT&CK controlada
 
-## Pipeline de dependências
+Selecione uma técnica de baixo impacto do MITRE ATT&CK e simule seu comportamento em uma VM própria. Defina critérios de parada antes de executar.
 
-Monte um projeto pequeno com inventário de dependências, SBOM e verificação automatizada em CI. Explique como distinguir vulnerabilidade aplicável de correspondência imprecisa.
+Entrega: plano do exercício, ações, evidências, eventos gerados, oportunidades de detecção e limpeza.
 
-## Laboratório de detecção
+## Analisador de evidências
 
-Execute ações benignas e controladas em uma VM, colete logs e crie regras de detecção. Documente falsos positivos, cobertura e fontes necessárias.
+Crie uma ferramenta que normalize resultados de laboratório, remova segredos e gere Markdown ou JSON para relatórios.
 
-## Relatório de aplicação vulnerável
+Entrega: código testado, exemplos fictícios, modelo de dados e explicação das limitações.
 
-Use OWASP Juice Shop ou outro alvo autorizado. Escreva um relatório profissional contendo resumo executivo, escopo, evidência, risco, reprodução e mitigação.
+## Verificador de OPSEC operacional
 
-## Visualizador de DNS
+Crie um checklist que valide nomes de arquivos, metadados, credenciais acidentais, caminhos locais e informações sensíveis antes de publicar um relatório.
 
-Receba um domínio controlado pelo estudante, consulte registros DNS e apresente as relações em uma saída legível. Implemente limites, cache e mensagens claras de erro.
+Entrega: ferramenta ou processo reproduzível, casos de teste e lista de riscos que ele não cobre.
+
+## Relatório de reconhecimento
+
+Use o [00INFOSEC RECON](https://github.com/00infosec/00infosec-recon) somente em domínio próprio ou autorizado e revise manualmente cada resultado.
+
+Entrega: relatório que separe fatos observados, candidatos e findings confirmados, com justificativa para cada classificação.
+
+## Plano de Red Team fictício
+
+Escreva regras de engajamento para uma organização fictícia: objetivos, escopo, técnicas permitidas, proibições, contatos, janelas, evidências, comunicação de emergência e encerramento.
+
+Entrega: documento profissional sem execução técnica contra terceiros.
 
 ## Critérios de qualidade
 
 Todo projeto deve incluir:
 
-- README com objetivo e escopo;
-- instruções reproduzíveis;
-- licença;
-- exemplos sanitizados;
-- testes proporcionais ao projeto;
-- limitações conhecidas;
-- seção de uso responsável;
+- objetivo, autorização e escopo;
+- arquitetura do laboratório;
+- metodologia e hipóteses;
+- evidências sanitizadas;
+- critérios de parada;
+- limitações e falsos positivos;
+- impacto, detecção e mitigação;
+- limpeza do ambiente;
+- README, licença e histórico Git claro;
 - ausência de segredos e dados de terceiros.

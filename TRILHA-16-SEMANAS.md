@@ -1,4 +1,4 @@
-# Trilha prática de 16 semanas
+# Trilha Red Team de 16 semanas
 
 Este é um roteiro de autoestudo, não uma obrigação. Não há notas, frequência ou prazo. Reduza ou aumente o ritmo, repita exercícios e use apenas as partes que forem úteis no seu momento.
 
@@ -101,44 +101,45 @@ Estude pipes, redirecionamento, filtros, variáveis, repositórios, commits, his
 
 Entrega opcional: repositório com README e uma automação de inventário do próprio computador.
 
-## Módulo 4 — Fundamentos de cibersegurança
+## Módulo 4 — Red Team e segurança ofensiva
 
-### Semana 12 — Princípios
+### Semana 12 — Ética, escopo e metodologia
 
-Estude confidencialidade, integridade, disponibilidade, ativo, ameaça, vulnerabilidade, risco, controle, impacto, superfície de ataque e defesa em profundidade.
+Estude autorização, escopo, regras de engajamento, critérios de parada, confidencialidade, integridade, disponibilidade, ativo, ameaça, vulnerabilidade, risco, controle e impacto.
 
-Prática: faça um inventário de ativos e uma matriz de riscos para uma empresa fictícia.
+Prática: escreva um plano de avaliação para uma empresa fictícia, incluindo ativos permitidos, técnicas proibidas, janela, contatos e tratamento de evidências.
 
-### Semana 13 — Identidade e criptografia
+### Semana 13 — Windows, identidade e Active Directory
 
-Estude autenticação, autorização, auditoria, menor privilégio, MFA, hashes, codificação, criptografia, chaves e assinaturas.
+Estude domínios, usuários, grupos, políticas, autenticação, autorização, menor privilégio, Kerberos, NTLM, LDAP, SMB e logs de segurança.
 
-Prática: compare hash e Base64 e escreva uma política de acesso para um cenário fictício.
+Prática: monte um cenário local simples, documente relações de confiança e explique riscos de permissões excessivas sem atacar infraestrutura externa.
 
-### Semana 14 — Proteção e monitoramento
+### Semana 14 — Reconhecimento e superfície de ataque
 
-Estude atualizações, hardening, firewall, antimalware, backup, logs, SOC, SIEM, alertas e incidentes.
+Estude reconhecimento passivo, DNS, certificados, tecnologias, exposição de serviços, validação de escopo e diferença entre observação, candidato e vulnerabilidade confirmada.
 
-Prática: aplique um checklist de hardening em uma VM e teste a restauração de um arquivo.
+Prática: analise apenas um domínio próprio ou laboratório, produza inventário de ativos e registre limitações e falsos positivos.
 
-### Semana 15 — Vulnerabilidades e web
+### Semana 15 — Testes web e validação
 
-Estude CVE, CWE, severidade, aplicações web, cookies, sessões, validação de entrada, injeção, XSS, controle de acesso e divulgação responsável.
+Estude metodologia web, cookies, sessões, autenticação, controle de acesso, validação de entrada, injeção, XSS, SSRF, lógica de negócio, CVE, CWE e divulgação responsável.
 
-Prática: use apenas uma aplicação local deliberadamente vulnerável ou laboratório autorizado e escreva um relatório com causa, impacto e correção.
+Prática: use uma aplicação deliberadamente vulnerável, confirme uma falha guiada e escreva evidência, impacto, reprodução, detecção e correção.
 
-### Semana 16 — Projeto integrado
+### Semana 16 — Exercício Red Team controlado
 
-Monte uma rede pequena de laboratório e documente:
+Planeje e execute uma simulação pequena no próprio laboratório. Documente:
 
-- inventário de hardware e software;
-- diagrama e endereçamento;
-- protocolos e serviços observados;
-- usuários, permissões e controles;
-- captura de tráfego autorizada;
-- automação de inventário ou análise de logs;
-- riscos e recomendações.
+- objetivo e regras de engajamento;
+- cenário e técnica ATT&CK selecionada;
+- hipótese e caminho de ataque esperado;
+- ações executadas e evidências;
+- impacto demonstrado sem causar dano;
+- telemetria e oportunidades de detecção;
+- limpeza do ambiente;
+- riscos, correções e resumo executivo.
 
 ## Ao concluir
 
-Você deve conseguir explicar como computadores, sistemas, redes e protocolos se conectam; montar um laboratório seguro; escrever automações simples; diferenciar observação de vulnerabilidade confirmada; e produzir documentação ética e reproduzível.
+Você deve conseguir explicar como computadores, identidades, redes e protocolos se conectam; definir um escopo; montar um laboratório seguro; realizar reconhecimento autorizado; validar uma hipótese sem ultrapassar limites; e produzir um relatório ofensivo ético e reproduzível.
